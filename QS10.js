@@ -4,7 +4,7 @@
 
 function surfaceAreaOfSphere(radius){
 
-        return 4 * 3.14 * Math.pow(radius, 2)
+        return 4 * (22/7) * Math.pow(radius, 2)
 
 }
 
