@@ -1,8 +1,8 @@
 // Accept two numbers and print the greatest between them
 
 
-function findGreatest(a,b){
-    if(a>b)
+function findGreatest(a, b) {
+    if (a > b)
         return a
     return b
 }
