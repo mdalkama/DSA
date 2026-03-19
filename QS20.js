@@ -1,5 +1,7 @@
 // Question: Shop Discount Calculator
 
+
+// Assuming question to be like this
 // A shop offers discounts based on the total bill amount:
 // ₹0 – ₹1000 → No discount
 // ₹1001 – ₹5000 → 10% discount
@@ -11,6 +13,11 @@ function calculatePercentage(percent, amount) {
 }
 
 function calculateDiscount(amount) {
+
+    if(amount < 0){
+        return "Invalid input"
+    }
+
     if (amount > 10000) {
         return amount - calculatePercentage(30, amount)
     } else if (amount > 5000) {
@@ -22,4 +29,4 @@ function calculateDiscount(amount) {
     }
 }
 
-console.log(calculateDiscount(1000))
+console.log(calculateDiscount(-111))
