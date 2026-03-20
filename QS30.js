@@ -5,6 +5,7 @@ function factor(n){
         if(n%i == 0)
         console.log(i)
     }
+    console.log(n)
 }
 
 factor(32)
