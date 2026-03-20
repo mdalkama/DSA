@@ -1,7 +1,7 @@
 // Right Triangle - Number Pattern
 
 
-function startNum(num) {
+function NumTriangle(num) {
     let numCont = ""
     for (let i = 1; i <= num; i++) {
         for (let j = 1; j <= i; j++) {
@@ -12,4 +12,4 @@ function startNum(num) {
     }
 }
 
-startNum(5)
+NumTriangle(5)
