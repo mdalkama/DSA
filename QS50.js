@@ -1,14 +1,11 @@
-// Triangle Pattern
+// Mirrored Right Triangle Pattern
 
-
-function triangle(num) {
-    let value = ""
-
-    for (let i = 0; i < num; i++) {
-        value = " ".repeat(num - i) + "*".repeat(i * 2 + 1)
-        console.log(value)
-        value = ""
+function mirrorStr(num) {
+    let val = ""
+    for (let i = 1; i <= num; i++) {
+        val = " ".repeat(num - i) + "*".repeat(i)
+        console.log(val)
+        val = ""
     }
-
 }
-triangle(5)
+mirrorStr(5)

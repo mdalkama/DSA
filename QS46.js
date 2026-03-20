@@ -1,15 +1,9 @@
-// Right Triangle - Number Pattern
+// Right Triangle - Star Pattern
 
-
-function NumTriangle(num) {
-    let numCont = ""
+function star1(num) {
     for (let i = 1; i <= num; i++) {
-        for (let j = 1; j <= i; j++) {
-            numCont += j
-        }
-        console.log(numCont)
-        numCont = ""
+        console.log("*".repeat(i))
     }
 }
 
-NumTriangle(5)
+star1(5)

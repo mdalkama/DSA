@@ -1,10 +1,14 @@
-// Inverted Right Triangle Pattern
+// Right Triangle - Alphabet Pattern
 
+function alphabetTriangle(num) {
 
-function star1(num) {
-    for (let i = num; i > 0; i--) {
-        console.log("*".repeat(i))
+    let alphabetCont = ""
+    for (let i = 0; i < num; i++) {
+        for (let j = 0; j <= i; j++) {
+            alphabetCont += String.fromCharCode(65 + j)
+        }
+        console.log(alphabetCont)
+        alphabetCont = ""
     }
 }
-
-star1(5)
+alphabetTriangle(5)

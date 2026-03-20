@@ -1,14 +1,15 @@
-// Right Triangle - Alphabet Pattern
+// Right Triangle - Number Pattern
 
-function alphabetTriangle(num) {
 
-    let alphabetCont = ""
-    for (let i = 0; i < num; i++) {
-        for (let j = 0; j <= i; j++) {
-            alphabetCont += String.fromCharCode(65 + j)
+function NumTriangle(num) {
+    let numCont = ""
+    for (let i = 1; i <= num; i++) {
+        for (let j = 1; j <= i; j++) {
+            numCont += j
         }
-        console.log(alphabetCont)
-        alphabetCont = ""
+        console.log(numCont)
+        numCont = ""
     }
 }
-alphabetTriangle(5)
+
+NumTriangle(5)

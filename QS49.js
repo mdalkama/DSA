@@ -1,11 +1,10 @@
-// Mirrored Right Triangle Pattern
+// Inverted Right Triangle Pattern
 
-function mirrorStr(num) {
-    let val = ""
-    for (let i = 1; i <= num; i++) {
-        val = " ".repeat(num - i) + "*".repeat(i)
-        console.log(val)
-        val = ""
+
+function star1(num) {
+    for (let i = num; i > 0; i--) {
+        console.log("*".repeat(i))
     }
 }
-mirrorStr(5)
+
+star1(5)
