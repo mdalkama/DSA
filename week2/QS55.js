@@ -9,4 +9,4 @@ for(let i = 1; i < arr.length; i++){
     }
 }   
 
-console.log(`max: ${max}`)
+console.log(`max element ${max} found`)
