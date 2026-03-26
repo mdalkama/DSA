@@ -7,9 +7,7 @@ let n = arr.length
 let i = 0
 
 while (i < Math.floor(n / 2)) {
-    let temp = arr[i]
-    arr[i] = arr[n-1-i];
-    arr[n-1-i] = temp
+    [arr[i], arr[n-1-i]] = [arr[n-1-i], arr[i]]
     i++
 }
 
