@@ -6,12 +6,10 @@ let key = 1011
 let low = 0
 let high = arr.length - 1
 let mid = Math.floor((low + high) / 2)
-let isFound = 0
 
 while (low <= high) {
     if (arr[mid] == key) {
         console.log(`Element found at index: ${mid}`)
-        isFound = 1
         break;
     }
     if (arr[mid] < key) {
@@ -23,6 +21,6 @@ while (low <= high) {
     }
 }
 
-if (!isFound) {
+if (low > high) {
     console.log(-1)
 }
