@@ -7,10 +7,14 @@ const arr = [2, 3, 5, 4, 1];
 let step = 0;
 
 while (arr.length > 0) {
-    const max = Math.max(...arr);
-    const index = arr.indexOf(max);
+    let max = 0
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > arr[max]) {
+            max = i
+        }
+    }
     step++
-    arr.splice(index)
+    arr.splice(max)
 }
 
 console.log(step)
