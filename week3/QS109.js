@@ -1,15 +1,15 @@
 // Maximum Number of Words Found in Sentences
 
-const str = "alice and bob love leetcode";
+const str = ["alice and bob love leetcode","i think so too","this is great thanks very much"]
 
 
-const arr = str.split(" ")
-let max = arr[0].length;
+
+let max = str[0].split(" ").length;
 
 
-for (let i = 1; i < arr.length; i++) {
-    if (arr[i].length > max) {
-        max = arr[i].length
+for (let i = 1; i < str.length; i++) {
+    if (str[i].split(" ").length > max){
+        max = str[i].split(" ").length
     }
 }
 
