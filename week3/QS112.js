@@ -1,10 +1,11 @@
 // Sort the words of the sentence
 
-let str = "Banana apple Mango";
+let str = "sentence4 a3 is2 This1";
 
-let result = str
-    .split(" ")
-    .sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
-    .join(" ");
+const arr = str.split(" ")
 
-console.log(result);
+arr.sort((a, b) => {
+    return +a.split("")[a.length - 1] - +b.split("")[b.length - 1]
+})
+
+console.log(arr)
