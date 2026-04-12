@@ -19,9 +19,6 @@ for (let i = nums.length - 1; i >= 0; i--) {
 }
 
 
-console.log(ps)
-console.log(pe)
-
 for (let i = 0; i < nums.length; i++) {
     if (i == 0) {
         answer[i] = pe[i + 1]
