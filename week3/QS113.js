@@ -1,5 +1,19 @@
 // Count Asterisks
 
-const s = "l|*e*et|c**o|*de|"
+const s = "yo|uar|e**|b|e***au|tifu|l"
 
-for(let i )
+let pipe = false;
+let result = 0;
+
+for (let i = 0; i < s.length; i++) {
+
+    if (s[i] == "|") {
+        pipe = !pipe;
+    }
+
+    else if (s[i] == "*" && !pipe) {
+        result++;
+    }
+}
+
+console.log(result)
