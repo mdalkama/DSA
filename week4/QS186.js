@@ -1,7 +1,7 @@
 // Count of element in the sorted array
 
 
-const nums = [5, 7, 7, 8, 8, 8, 10]
+const nums = [5, 7, 7, 8, 8, 8, 8, 8, 10]
 const target = 8
 
 function binary(nums, target, findFirst) {
