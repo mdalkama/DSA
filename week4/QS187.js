@@ -3,6 +3,7 @@
 const nums = [0, 10, 5, 2]
 
 
+function findPeak(nums) {
 let low = 0;
 let high = nums.length - 1;
 
@@ -15,5 +16,8 @@ while (low < high) {
         high = mid;
     }
 }
+return low;
+}
 
+const low = findPeak(nums);
 console.log(low)
